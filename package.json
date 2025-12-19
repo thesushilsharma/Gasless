@@ -9,12 +9,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "biome check",
+    "format": "biome format --write"
   },
   "dependencies": {
-    "next": "15.4.3",
-    "react": "~19.1.2",
-    "react-dom": "~19.1.2",
+    "next": "16.1.0",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
     "@coinbase/cdp-react": "latest",
     "@coinbase/cdp-hooks": "latest",
     "@coinbase/cdp-core": "latest",
@@ -23,11 +24,11 @@
     "@coinbase/cdp-sdk": "latest"
   },
   "devDependencies": {
+    "babel-plugin-react-compiler": "1.0.0",
     "@types/node": "^20",
-    "@types/react": "~19.1.8",
-    "@types/react-dom": "~19.1.6",
-    "eslint": "^9.31.0",
-    "eslint-config-next": "15.4.3",
-    "typescript": "~5.8.3"
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@biomejs/biome": "2.2.0",
+    "typescript": "^5"
   }
 }
