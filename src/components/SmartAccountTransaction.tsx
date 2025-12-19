@@ -37,11 +37,11 @@ export default function SmartAccountTransaction(props: Props) {
       setUserOperationHash("");
 
       const result = await sendUserOperation({
-        evmSmartAccount: smartAccount,
+        evmSmartAccount: smartAccount as `0x${string}`,
         network: "base-sepolia",
         calls: [
           {
-            to: smartAccount, // Send to yourself for testing
+            to: smartAccount as `0x${string}`, // Send to yourself for testing
             value: 1000000000000n, // 0.000001 ETH in wei
             data: "0x", // Empty data for simple transfer
           },
